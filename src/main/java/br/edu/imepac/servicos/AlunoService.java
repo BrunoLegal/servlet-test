@@ -3,7 +3,7 @@ package br.edu.imepac.servicos;
 import br.edu.imepac.daos.AlunoDao;
 import br.edu.imepac.entidades.Aluno;
 
-import java.lang.reflect.Array;
+import java.sql.Array;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -19,6 +19,10 @@ public class AlunoService {
         return this.alunoDao.create(novoAluno);
     }
 
+    public Aluno ler(long id) throws SQLException{
+        return this.alunoDao.read(id);
+    }
+
     public List<Array> lerTodos() throws SQLException {
         return this.alunoDao.readAll();
     }
@@ -28,6 +32,6 @@ public class AlunoService {
     }
 
     public Aluno atualizar(Aluno alunoAtualizado) throws SQLException{
-        return this.alunoDao.update();
+        return this.alunoDao.update(alunoAtualizado);
     }
 }
