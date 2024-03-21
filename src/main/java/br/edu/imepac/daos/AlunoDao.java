@@ -1,7 +1,6 @@
 package br.edu.imepac.daos;
 
 import br.edu.imepac.entidades.Aluno;
-import br.edu.imepac.interfaces.InterfaceDao;
 
 import java.sql.Array;
 import java.sql.Connection;
@@ -14,7 +13,7 @@ public class AlunoDao {
     private Connection connection;
 
     private void createConnection() throws SQLException{
-        this.connection = DriverManager.getConnection("localhost");
+        this.connection = DriverManager.getConnection("url");
     }
     private void destroyConnection() throws SQLException{
         this.connection.close();
