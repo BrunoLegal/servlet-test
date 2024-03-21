@@ -8,17 +8,17 @@ import java.util.List;
 public class AlunoService {
     public Aluno cadastrar(Aluno novoAluno){
 
-    };
+    }
 
     public List<Array> lerTodos(){
 
-    };
+    }
 
     public Aluno deletar(long id){
 
-    };
+    }
 
     public Aluno atualizar(Aluno alunoAtualizado){
 
-    };
+    }
 }
