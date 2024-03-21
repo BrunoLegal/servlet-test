@@ -13,6 +13,6 @@ public class AlunoServlet extends HttpServlet {
 
     }
     protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException{
-        
+
     }
 }
