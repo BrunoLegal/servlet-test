@@ -13,13 +13,13 @@ public class AlunoDao {
     private Connection connection;
 
     private void createConnection() throws SQLException{
-        this.connection = DriverManager.getConnection("url");
+        this.connection = DriverManager.getConnection("jdbc:mysql://localhost/alunos?"+"user=root&password=1234");
     }
     private void destroyConnection() throws SQLException{
         this.connection.close();
     }
-    public Aluno create(Aluno aluno) throws SQLException {
-        return null;
+    public void create(Aluno aluno) throws SQLException {
+
     }
 
     public Aluno read(long id) throws SQLException{
@@ -32,12 +32,12 @@ public class AlunoDao {
     }
 
 
-    public Aluno update(Aluno aluno) throws SQLException {
-        return null;
+    public void update(Aluno aluno) throws SQLException {
+
     }
 
 
-    public Aluno delete(long id) throws SQLException {
-        return null;
+    public void delete(long id) throws SQLException {
+
     }
 }
